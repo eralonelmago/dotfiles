@@ -37,7 +37,7 @@ Or manually copy the files you need.
 ```bash
 dotfiles/
 ├── .config
-    ├── nvim
+    └── nvim
 ├── .gitconfig
 └── setup.sh
 ```
