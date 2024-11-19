@@ -20,7 +20,7 @@ This repository contains the setup, tweaks, and preferences that power my workfl
 - **Other Tools**:
   - Scripts, automation, and tweaks for a smoother workflow.
 
-### 🔧 Setup
+## 🔧 Setup
 
 Clone the repository:
 
@@ -32,7 +32,7 @@ cd dotfiles
 
 Or manually copy the files you need.
 
-### 📂 Structure
+## 📂 Structure
 
 ```bash
 dotfiles/
@@ -45,7 +45,7 @@ dotfiles/
 └── themes/
 ```
 
-### 📣 Contributions
+## 📣 Contributions
 
 While this repository is tailored to my preferences, I'm open to suggestions! Feel free to fork, adapt, and create pull requests.
 
