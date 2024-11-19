@@ -7,8 +7,6 @@ This repository contains the setup, tweaks, and preferences that power my workfl
 > [!NOTE]
 > Working on it!
 
----
-
 ## 🛠️ What's Included?
 
 - **Shell Configs**: 
@@ -21,8 +19,6 @@ This repository contains the setup, tweaks, and preferences that power my workfl
   - Custom themes for a beautiful and functional terminal.
 - **Other Tools**:
   - Scripts, automation, and tweaks for a smoother workflow.
-
----
 
 ### 🔧 Setup
 
