@@ -36,13 +36,10 @@ Or manually copy the files you need.
 
 ```bash
 dotfiles/
-├── .bashrc
-├── .zshrc
-├── init.vim
+├── .config
+    ├── nvim
 ├── .gitconfig
-├── .aliases
-├── setup.sh
-└── themes/
+└── setup.sh
 ```
 
 ## 📣 Contributions
