@@ -1,0 +1,63 @@
+[user]
+    name = Your Name
+    email = your.email@example.com
+
+[core]
+    editor = vim
+    pager = less
+    autocrlf = input    # Use 'true' on Windows, 'input' on macOS/Linux
+
+[color]
+    ui = auto
+
+[alias]
+    # Common shortcuts
+    st = status
+    co = checkout
+    ci = commit
+    br = branch
+    lg = log --oneline --graph --decorate --all
+    lga = log --oneline --graph --decorate --all --author="Your Name"
+    df = diff
+    dc = diff --cached
+    amend = commit --amend
+    pl = pull
+    ps = push
+    rs = restore
+
+    # Workflows
+    rb = rebase
+    rbc = rebase --continue
+    rba = rebase --abort
+
+    # Logs
+    ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+    lt = log --oneline --since="1 week ago"
+
+    # Cleaning and Resetting
+    unstage = reset HEAD --
+    discard = checkout --
+
+    # Tagging
+    t = tag
+    ltg = log --tags --simplify-by-decoration --pretty="format:%ci %d"
+
+    # Collaboration
+    spr = "!f() { git fetch origin pull/$1/head:$1 && git checkout $1; }; f"
+
+[fetch]
+    prune = true
+
+[merge]
+    ff = only  # Only fast-forward merge if possible
+
+[push]
+    default = simple
+
+[rebase]
+    autosquash = true
+
+[diff]
+    mnemonicprefix = true
+    renames = copies
+
