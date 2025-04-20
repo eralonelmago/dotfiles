@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/eralon/dotfiles/oh-my-zsh/.oh-my-zsh'
+let g:netrw_dirhist_2='/home/eralon'
+let g:netrw_dirhist_1='/home/eralon/.config/i3'
