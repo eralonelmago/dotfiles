@@ -1,5 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
-export EDITOR="vim"
+export EDITOR="nvim"
+export VISUAL="nvim"
 export SUDO_EDITOR="$EDITOR"
 
 HISTFILE=~/.history
