@@ -23,7 +23,7 @@
 
 # introduction
 
-Managing and configuring files, also known as by _dotfiles_, is a task that I have always found to be a total mess. By chance of life, I discovered that there were a lot of (tools and documentation)[https://dotfiles.github.io] teaching how to take care of this sort of things. As a consequence, I started to keep a VCS of my dotfiles.
+Managing and configuring files, also known as by _dotfiles_, is a task that I have always found to be a total mess. By chance of life, I discovered that there were a lot of [tools and documentation](https://dotfiles.github.io) teaching how to take care of this sort of things. As a consequence, I started to keep a VCS of my dotfiles.
 
 # set-up
 
