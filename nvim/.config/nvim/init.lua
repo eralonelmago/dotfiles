@@ -1,8 +1,7 @@
--- NVIM Configuration
+local utils = require('utils')
 
-local ok, err = pcall(require, 'config')
-if not ok then
-  print('Could not load configuration files...')
-  print(string.format('\t[ERROR]: %s %s', err, debug.traceback()))
-  return
-end
+-- NVIM Configuration
+--  /config/: plugin and keymaps configuration
+--  /after/: configuration post load-up plugins
+utils.require('config')
+utils.require('after')

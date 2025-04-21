@@ -16,7 +16,7 @@ vo.ignorecase = true
 vo.smartcase = true
 vo.hlsearch = false
 
-vo.showbreak = ↪
+vo.showbreak = '↪'
 
 vo.scrolloff = 3
 
@@ -36,4 +36,17 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
 vk.set('n', '<C-a>', 'ggVG')
-vk.set('n', '<C-i>', 'mzgg=G`z', { desc = 'Indent text', noremap = 'true' })
+vk.set('n', '<C-i>', 'mzgg=G`z', { desc = 'Indent text', noremap = true })
+
+-- LSP keymaps
+
+vim.api.nvim_create_autocmd('LspAttach', {
+  callback = function(event)
+    local opts = {buffer = event.buf}
+
+    vim.keymap.set('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<cr>', opts)
+    vim.keymap.set({'n', 'x'}, 'gq', '<cmd>lua vim.lsp.buf.format({async = true})<cr>', opts)
+    vim.keymap.set('n', 'grt', '<cmd>lua vim.lsp.buf.type_definition()<cr>', opts)
+    vim.keymap.set('n', 'grd', '<cmd>lua vim.lsp.buf.declaration()<cr>', opts)
+  end,
+})
