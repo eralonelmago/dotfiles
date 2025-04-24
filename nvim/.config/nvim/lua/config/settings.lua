@@ -1,52 +1,30 @@
-local vo = vim.opt
-local vk = vim.keymap
+vim.opt.guicursor = ""
 
--- Editor configuration
+vim.opt.nu = true
+vim.opt.relativenumber = true
 
-vo.tabstop = 2
-vo.shiftwidth = 2
-vo.expandtab = true
-vo.autoindent = true
-vo.smartindent = true
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
 
-vo.number = true
-vo.relativenumber = true
+vim.opt.smartindent = true
 
-vo.ignorecase = true
-vo.smartcase = true
-vo.hlsearch = false
+vim.opt.wrap = false
 
-vo.showbreak = '↪'
+vim.opt.swapfile = false
+vim.opt.backup = false
+vim.opt.undofile = true
 
-vo.scrolloff = 3
+vim.opt.hlsearch = false
+vim.opt.incsearch = true
 
-vo.mouse = 'n'
-vo.mousemodel = 'popup'
-vo.mousescroll = 'ver:1,hor:0'
+vim.opt.termguicolors = true
 
-vo.undofile = true
+vim.opt.scrolloff = 8
+vim.opt.signcolumn = "yes"
+vim.opt.isfname:append("@-@")
 
-vo.completeopt = 'menu,menuone,popup,fuzzy,noinsert'
+vim.opt.updatetime = 50
 
-vo.termguicolors = true
-
--- Editor keymaps
-
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
-
-vk.set('n', '<C-a>', 'ggVG')
-vk.set('n', '<C-i>', 'mzgg=G`z', { desc = 'Indent text', noremap = true })
-
--- LSP keymaps
-
-vim.api.nvim_create_autocmd('LspAttach', {
-  callback = function(event)
-    local opts = {buffer = event.buf}
-
-    vim.keymap.set('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<cr>', opts)
-    vim.keymap.set({'n', 'x'}, 'gq', '<cmd>lua vim.lsp.buf.format({async = true})<cr>', opts)
-    vim.keymap.set('n', 'grt', '<cmd>lua vim.lsp.buf.type_definition()<cr>', opts)
-    vim.keymap.set('n', 'grd', '<cmd>lua vim.lsp.buf.declaration()<cr>', opts)
-  end,
-})
+vim.opt.colorcolumn = "80"
